@@ -1,0 +1,20 @@
+//MISSINGNUMBERINARRAY
+#include <stdio.h>
+int main ()
+{
+int arr[] = {1, 2, 4, 5};
+int n = 5,i;
+int sum = 0;
+
+for( i = 0; i < 4; i++) {
+    sum += arr[i];
+}
+
+int expected = n * (n + 1) / 2;
+int missing = expected - sum;
+
+printf("MISSING NO IS %d", missing);
+return 0;
+}
+/*OUTPUT
+MISSING NO IS 3*/
