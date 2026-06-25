@@ -1,0 +1,24 @@
+//Fibonaaci_upto_N
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int first = 0, second = 1, next;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for(i = 0; i < n; i++) {
+        printf("%d ", first);
+        next = first + second;
+        first = second;
+        second = next;
+    }
+
+    return 0;
+}
+/*output
+Enter number of terms: 5
+Fibonacci Series: 0 1 1 2 3*/ 
